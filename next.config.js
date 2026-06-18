@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+  basePath: '/Arquitetura',
+  assetPrefix: '/Arquitetura/',
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
+
+// Made with Bob

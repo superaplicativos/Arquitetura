@@ -11,23 +11,59 @@ export default function Header() {
             <Logo />
           </div>
 
-          {/* Desktop sign in links */}
+          {/* Desktop navigation */}
+          <nav className="hidden md:flex md:grow">
+            <ul className="flex grow flex-wrap items-center justify-center gap-4 text-sm">
+              <li>
+                <Link
+                  href="#"
+                  className="text-gray-700 transition hover:text-indigo-600"
+                >
+                  Sobre o Método
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#pricing"
+                  className="text-gray-700 transition hover:text-indigo-600"
+                >
+                  Planos
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/5511966161611"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 transition hover:text-indigo-600"
+                >
+                  Contato
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          {/* Desktop CTA buttons */}
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
-              <Link
-                href="/signin"
-                className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
+              <a
+                href="https://wa.me/5511966161611?text=Olá,%20acessei%20o%20site%20e%20gostaria%20de%20obter%20um%20orçamento%20para%20Mentoria%20Personalizada!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-sm hidden bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:inline-flex"
               >
-                Login
-              </Link>
+                Mentoria
+              </a>
             </li>
             <li>
-              <Link
-                href="/signup"
-                className="btn-sm bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
+              <a
+                href="https://pay.hotmart.com/C106369391H"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-sm bg-gradient-to-t from-indigo-600 to-indigo-500 text-white shadow-sm hover:from-indigo-700 hover:to-indigo-600"
               >
-                Register
-              </Link>
+                Acessar Curso
+              </a>
             </li>
           </ul>
         </div>
@@ -35,3 +71,5 @@ export default function Header() {
     </header>
   );
 }
+
+// Made with Bob

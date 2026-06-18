@@ -1,22 +1,24 @@
 export const metadata = {
-  title: "Home - Simple",
-  description: "Page description",
+  title: "Curso de Produção de Conteúdo para Arquitetos com IA",
+  description: "Eleve o nível das suas apresentações e conquiste mais clientes com o poder da Inteligência Artificial. Curso completo para arquitetos, designers de interiores e engenheiros.",
 };
 
 import Hero from "@/components/hero-home";
-import BusinessCategories from "@/components/business-categories";
-import FeaturesPlanet from "@/components/features-planet";
-import LargeTestimonial from "@/components/large-testimonial";
+import ThreePillars from "@/components/three-pillars";
+import BeforeAfter from "@/components/before-after";
+import Pricing from "@/components/pricing";
 import Cta from "@/components/cta";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <BusinessCategories />
-      <FeaturesPlanet />
-      <LargeTestimonial />
+      <ThreePillars />
+      <BeforeAfter />
+      <Pricing />
       <Cta />
     </>
   );
 }
+
+// Made with Bob

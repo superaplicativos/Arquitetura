@@ -14,7 +14,7 @@ export default function Cta() {
             className="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2 translate-y-1/2"
             aria-hidden="true"
           >
-            <div className="h-56 w-[480px] rounded-full border-[20px] border-blue-500 blur-3xl" />
+            <div className="h-56 w-[480px] rounded-full border-[20px] border-indigo-500 blur-3xl" />
           </div>
           {/* Stripes illustration */}
           <div
@@ -31,24 +31,43 @@ export default function Cta() {
           </div>
           <div className="px-4 py-12 md:px-12 md:py-20">
             <h2 className="mb-6 border-y text-3xl font-bold text-gray-200 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-700/.7),transparent)1] md:mb-12 md:text-4xl">
-              Create your next project with Simple
+              Não Fique Para Trás na Transformação Digital
             </h2>
-            <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
+            <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-400">
+              Domine as ferramentas que o mercado exige hoje e destaque-se da concorrência. 
+              A inteligência artificial está revolucionando o setor de arquitetura e design.
+            </p>
+            <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center sm:gap-4">
               <a
-                className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                href="#0"
+                className="btn group mb-4 w-full bg-gradient-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-lg hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
+                href="https://pay.hotmart.com/C106369391H"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span className="relative inline-flex items-center">
-                  Start Free Trial{" "}
-                  <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                    -&gt;
+                  Começar Agora por R$ 39,90
+                  <span className="ml-1 tracking-normal text-indigo-300 transition-transform group-hover:translate-x-0.5">
+                    →
                   </span>
                 </span>
               </a>
+              <a
+                className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:w-auto"
+                href="https://wa.me/5511966161611?text=Olá,%20acessei%20o%20site%20e%20gostaria%20de%20obter%20um%20orçamento%20para%20Mentoria%20Personalizada!"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Falar com Consultor
+              </a>
             </div>
+            <p className="mt-6 text-sm text-gray-500">
+              💳 Pagamento 100% seguro • 🔒 Garantia de 7 dias • 📱 Suporte dedicado
+            </p>
           </div>
         </div>
       </div>
     </section>
   );
 }
+
+// Made with Bob

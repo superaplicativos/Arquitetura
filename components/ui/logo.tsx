@@ -2,21 +2,26 @@ import Link from "next/link";
 
 export default function Logo() {
   return (
-    <Link href="/" className="inline-flex" aria-label="Cruip">
-      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-        <path
-          className="fill-blue-500"
-          fillRule="evenodd"
-          d="M15.052 0c6.914.513 12.434 6.033 12.947 12.947h-5.015a7.932 7.932 0 0 1-7.932-7.932V0Zm-2.105 22.985V28C6.033 27.487.513 21.967 0 15.053h5.015a7.932 7.932 0 0 1 7.932 7.932Z"
-          clipRule="evenodd"
-        />
-        <path
-          className="fill-blue-300"
-          fillRule="evenodd"
-          d="M0 12.947C.513 6.033 6.033.513 12.947 0v5.015a7.932 7.932 0 0 1-7.932 7.932H0Zm22.984 2.106h5.015C27.486 21.967 21.966 27.487 15.052 28v-5.015a7.932 7.932 0 0 1 7.932-7.932Z"
-          clipRule="evenodd"
-        />
+    <Link href="/" className="inline-flex items-center gap-2" aria-label="GuiMiranda.Tech">
+      {/* Icon */}
+      <svg
+        className="h-8 w-8 fill-indigo-600"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2zm0 24a10 10 0 1 1 10-10 10 10 0 0 1-10 10z" />
+        <path d="M16 8a8 8 0 0 0-8 8h2a6 6 0 0 1 6-6V8z" />
+        <circle cx="16" cy="16" r="3" />
       </svg>
+      {/* Text Logo */}
+      <span className="text-xl font-bold">
+        <span className="bg-gradient-to-r from-indigo-600 to-indigo-400 bg-clip-text text-transparent">
+          GuiMiranda
+        </span>
+        <span className="text-gray-700">.Tech</span>
+      </span>
     </Link>
   );
 }
+
+// Made with Bob
